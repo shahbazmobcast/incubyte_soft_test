@@ -4,7 +4,8 @@ function Addition($str){
     if(strpos($str,"-")!=""){
         return "Negative Number not Allow";
     }
-    return $str;
+    preg_match_all('!\d+!', $str, $match);
+    return $match;
 }
-echo Addition("1,2");
+print_r(Addition("1,2"));
 ?>
