@@ -11,5 +11,5 @@ function Addition($str){
         return 0;
     }
 }
-echo(Addition("1,2"));
+echo(Addition("1,2,3,5"));
 ?>
