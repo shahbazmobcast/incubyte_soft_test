@@ -6,10 +6,10 @@ function Addition($str){
     }
     preg_match_all('!\d+!', $str, $match);
     if(is_array($match[0]) && count($match[0])>1){
-        return ($match[0]);
+        return array_sum($match[0]);
     }else{
         return 0;
     }
 }
-echo(Addition("1,\n"));
+echo(Addition("//;\n1;2"));
 ?>
